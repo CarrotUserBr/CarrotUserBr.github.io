@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+  /* Cores principais */
+  --primary-color: #6E2E00; /* Laranja mais escuro para destaque */
+
+  --primary-bg-color: #FFE7CC; /* Fundo principal em laranja claro */
+  --secondary-bg-color: #DBB284; /* Fundo secundário em tom mais escuro */
+  --border-color: #E3A35B; /* Cor da borda para separação */
+
+  /* Cores de texto e links */
+  --title-color: var(--primary-color); /* Cor do título em preto */
+  --text-color: #853700; /* Cor do texto em cinza escuro */
+  --link-color: #853700; /* Cor do link em laranja mais escuro */
+  --icon-color: #AD4800; /* Cor do ícone em laranja mais escuro */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+body {
+    background: var(--primary-bg-color);
+    font-family:'Inter', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: var(--icon-color);
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.header__brand .brand__logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+#toggleTheme {
+    font-size: 1.5rem;
+    color: var(--icon-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: var(--secondary-bg-color);
+}
+
+.menu__item {
+    width: 100%;
+}
+
+.menu--mobile{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-color);
+}
+
+.menu--mobile .menu__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: .5rem;
+}
+
+.menu__link.active .menu__icon,
+.menu__link.active .menu__text {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.menu__icon, .menu__text{
+    color: var(--text-color);
+
+}
+
+.menu__icon {
+    font-size: 1.5rem;
+}
+
+.menu__text{
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+@media (min-width:768px) {
+    .menu--mobile {
+        display: none;
+    }
+}
