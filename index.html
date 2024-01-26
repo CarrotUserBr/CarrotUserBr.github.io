@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +13,52 @@
 <body>
     
     <header class="header">
+
         <div class="header__brand">
-            <img class="brand__logo" src="./assets/images/CarrotDev-Logo-Black.png" alt="Logo CarrotUserBr">
+            <!-- <img class="brand__logo" src="./assets/images/CarrotDev-Logo-Black.svg" alt="Logo CarrotUserBr"> -->
+            <svg class="brand__logo" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet" fill="var(--primary-color)">
+                <!-- O restante do conteúdo do SVG permanece o mesmo -->
+                <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" stroke="none">
+                  <path d="M2549 3448 c-35 -70 -50 -173 -31 -226 10 -28 8 -31 -41 -63 -93 -61 -89 -48 -282 -856 -96 -402 -175 -743 -175 -756 0 -38 31 -59 81 -55 l44 3 397 635 c267 427 403 653 414 689 17 56 14 144 -6 181 -8 14 -2 20 30 35 77 35 132 108 149 199 17 92 4 106 -101 106 -54 0 -58 2 -58 23 0 45 -31 117 -50 117 -28 0 -102 -34 -137 -64 -31 -26 -32 -27 -43 -6 -17 32 -109 100 -136 100 -19 0 -30 -12 -55 -62z m114 -68 c18 -22 39 -57 45 -79 12 -39 16 -104 7 -113 -3 -3 -28 0 -56 6 -61 14 -83 45 -83 116 0 44 26 110 43 110 5 0 25 -18 44 -40z m241 -35 c6 -26 3 -33 -23 -48 -16 -9 -42 -32 -59 -51 l-29 -34 -7 51 c-6 56 8 80 69 118 33 20 38 17 49 -36z m166 -85 c0 -23 -33 -87 -58 -114 -15 -16 -45 -37 -66 -46 -39 -18 -39 -18 -77 7 -37 25 -38 26 -24 53 17 33 69 78 110 96 36 16 115 18 115 4z m-352 -162 c129 -54 191 -133 180 -231 -7 -59 -104 -221 -127 -211 -38 15 -55 9 -64 -23 l-10 -32 -49 20 c-67 26 -104 25 -112 -3 -7 -29 9 -41 90 -68 35 -12 66 -25 69 -30 4 -7 -560 -926 -586 -954 -5 -5 -12 -6 -16 -3 -7 8 105 496 118 511 5 5 27 2 53 -8 63 -24 101 -19 100 14 0 21 -9 29 -61 50 -34 14 -65 28 -68 31 -3 4 31 159 75 345 109 457 95 412 132 416 25 2 32 8 33 26 1 14 -6 27 -19 34 -12 6 -22 12 -24 13 -7 6 27 61 50 82 31 29 86 52 126 53 18 0 68 -14 110 -32z"/>
+                  <path d="M1132 2688 c-184 -183 -340 -346 -346 -361 -7 -16 -11 -41 -8 -55 3 -19 107 -130 346 -369 322 -323 344 -343 377 -343 53 0 89 37 89 91 0 42 -1 44 -300 344 l-300 301 300 298 c291 290 300 300 300 338 0 53 -35 88 -87 88 -36 0 -51 -14 -371 -332z"/>
+                  <path d="M3435 2995 c-19 -18 -25 -35 -25 -66 0 -42 1 -43 300 -337 l301 -295 -301 -302 c-299 -300 -300 -302 -300 -344 0 -54 36 -91 89 -91 33 0 56 20 378 343 l343 343 0 44 0 45 -343 342 c-329 330 -344 343 -380 343 -27 0 -45 -7 -62 -25z"/>
+                </g>
+            </svg>
+              
         </div>
 
-        <i id="toggleTheme" class="bi bi-moon-stars"></i>
+        <nav class="header__nav ">
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                    <a class="menu__link active" href="#home">
+                        <span class="menu__text">Home</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#projetos">
+                        <span class="menu__text">Projetos</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#sobre">
+                        <span class="menu__text">Sobre</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contato">
+                        <span class="menu__text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__toggle">
+            <i id="toggleTheme" class="bi bi-moon-stars"></i>
+        </div>
 
     </header>
 
-    <nav>
+    <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link active" href="#home">
@@ -50,5 +87,15 @@
         </ul>
     </nav>
 
+    <main></main>
+
+    <footer>
+        <p>
+            © 2024. Todos os Direitos Reservados. Pablo Fernando Rodriguez. Desenvolvido por <a href="">CarrotUserBr</a> 
+        </p>
+    </footer>
+
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
