@@ -1,6 +1,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
- :root, :root[data-theme='light']{
+:root, :root[data-theme='light']{
   --primary-color: #6E2E00; 
 
   --primary-bg-color: #FFE7CC;
@@ -55,6 +56,21 @@ a:hover{
 i {
     color: var(--icon-color);
 }
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h1, h2, h3 {
+    font-family: 'League', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
 
 .header {
     display: flex;
@@ -140,8 +156,45 @@ color: var(--primary-color);
     gap: 1rem;
 }
 
+.menu--social {
+    gap: 1rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    background: transparent;
+    border-radius:  3.125rem;
+    padding: 0.875rem 1rem;
+}
+
+.btn span, .btn i{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.btn--primary span {
+    color: var(--primary-color)
+}
+
+.btn--primary {
+    border: 1px solid var(--primary-color);
+}
+
 main {
-    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 1rem;
+}
+
+.main__content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 footer {
