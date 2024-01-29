@@ -84,6 +84,7 @@ p{
     align-items: center;
     width: 100%;
     padding: 0.5rem 1rem;
+    z-index: 1;
 }
 
 .header__toggle {
@@ -173,7 +174,14 @@ p{
     width: 100%;
     background: transparent;
     border-radius:  3.125rem;
-    padding: 0.875rem 1rem;
+    padding: 0.875rem 1.5rem;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
 }
 
 .btn span, .btn i{
@@ -247,11 +255,14 @@ main {
     fill: var(--icon-color);
 }
 
+footer {
+    margin-bottom: 5rem;
+}
+
 footer p{
     font-size: .875rem;
     text-align: center;
     padding: 1rem;
-    margin-bottom: 5rem;
 }
 
 @media (min-width:768px) {
@@ -293,11 +304,64 @@ footer p{
         padding: 6.25rem 6rem 2rem 6rem;
         margin-top: -6rem;
     }
+
+
+    footer {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    p {
+        font-size: 1.5rem;
+    }
+    
+    main {
+        padding: 12rem 6rem 2rem 6rem;
+    }
+    
+    .main__content1 .btn {
+        width: auto;
+    }
+
+    .skills {
+        padding: 10rem 6rem 4rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .skills h2 {
+        font-size: 3.5rem;
+        width: 60%;
+    }
+
+    .skills__list {
+        gap: 1rem;
+    }
+
+    .skills__item {
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .skills__logo{
+        height: 3rem;
+    }
 }
 
 @media (min-width: 1400px){
+    
+    
     .header {
         padding: 0.5rem 15rem;
+    }
+    
+    main {
+        padding: 12rem 15rem 2rem 15rem;
+    }
+
+    .skills {
+        padding: 10rem 15rem 4rem;
     }
 } 
 
