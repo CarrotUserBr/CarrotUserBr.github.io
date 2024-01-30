@@ -318,6 +318,43 @@ main {
     display: flex;
 }
 
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.about__photo {
+    width: 15rem;
+    height: 15rem;
+}
+
+.about__title {
+    margin: 0;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__desc {
+    font-size: 1.1rem;
+}
+
+.about__language p{
+    display: flex;
+    gap: 1rem;
+}
+
+.about__education, .about__experience {
+    display: none;
+}
+
 footer {
     margin-bottom: 5rem;
 }
