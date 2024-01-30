@@ -327,6 +327,14 @@ main {
     padding: 2rem 1rem;
 }
 
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 .about__photo {
     width: 15rem;
     height: 15rem;
@@ -394,7 +402,7 @@ footer p{
         letter-spacing: 0.4rem;
     }
 
-    main, .projects {
+    main, .projects, .about{
         padding: 8rem 6rem 4rem;
     }
 
@@ -508,7 +516,7 @@ footer p{
         padding: 0.5rem 15rem;
     }
     
-    main, .projects {
+    main, .projects, .about {
         padding: 12rem 15rem 2rem;
     }
 
