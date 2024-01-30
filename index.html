@@ -89,7 +89,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="home">
         <div class="main__content1">
             <h1><b>Tecnologia com Propósito,</b> Desenvolvimento com Paixão</h1>
             <p>Pablo Fernando Rodriguez, Aceguá/RS, Desenvolvedor Web.</p>
@@ -101,15 +101,18 @@
                     <i class="menu__icon bi bi-linkedin"></i>
                 </a></li>
             </ul>
-            <button class="btn btn--primary">
-                <span>Conferir projetos</span>
-            </button>
+            <a href="#projetos">
+                <button class="btn btn--primary">
+                    <span>Conferir projetos</span>
+                </button>
+            </a>
         </div>
 
         <div class="main__content2">
             <img src="./assets/images/no-video-available-image.webp" alt="No video available">
         </div>
     </main>
+
     <section class="skills">
         <h2>Conhecimento nas principais tecnologias do mercado</h2>
         <ul class="skills__list">
@@ -124,6 +127,106 @@
             </li>
         </ul>
     </section>
+
+    <section class="projects" id="projetos">
+        <h2>Projetos</h2>
+        <div class="projects__container">
+            <div class="projects__card">
+                <img src="./assets/images/projects/marioGame.png" alt="Mockup Mario Game" class="card__cover">
+                <div class="card__body">
+                    <h3 class="card__title">Jumping Mario Game</h3>
+                    <p class="card__description">Jogo simples onde o Mario deve desviar de canos pulando para acumular pontos.</p>
+                    <ul class="card__list">
+                        <li class="card__item">Pontuação por canos pulados</li>
+                        <li class="card__item">Tela inicial e de Game Over</li>
+                        <li class="card__item">Última e melhor pontuação</li>
+                    </ul>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <svg class="skills__logo" alt="HTML5 Logo" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M9,7l3,34l14,4l14-4c1-11.33,2-22.67,3-34H9z M33.76,35l-7.77,2l-7.76-2l-0.39-5h3.86l0.18,2L26,32.62L30.17,32l0.41-5	H17.59l0.96-12H34l0.7,6H31l-0.23-2h-8.36l-0.32,4h12.66L33.76,35z"/></svg>
+                        </li>
+                        <li class="skills__item">
+                            <svg class="skills__logo" alt="CSS3 Logo" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path fill-rule="evenodd" d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z"/></svg>
+                        </li>
+                        <li class="skills__item">
+                            <svg class="skills__logo" alt="JavaScript Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px"><path d="M43.334,4H6.667C5.196,4,4,5.196,4,6.667v36.666C4,44.804,5.196,46,6.667,46h36.666C44.804,46,46,44.804,46,43.334V6.667C46,5.196,44.804,4,43.334,4z M27,36.182C27,40.18,24.656,42,21.234,42c-3.092,0-5.324-2.073-6.234-4l3.143-1.903C18.75,37.173,19.673,38,21,38c1.269,0,2-0.496,2-2.426V23h4V36.182z M35.677,42c-3.544,0-5.557-1.787-6.677-4l3-2c0.818,1.335,1.707,2.614,3.589,2.614c1.581,0,2.411-0.79,2.411-1.882c0-1.308-0.858-1.772-2.598-2.533l-0.954-0.409c-2.753-1.173-4.583-2.643-4.583-5.749c0-2.862,2.18-5.04,5.588-5.04c2.426,0,4.17,0.844,5.427,3.055l-2.971,1.908c-0.654-1.173-1.36-1.635-2.456-1.635c-1.118,0-1.826,0.709-1.826,1.635c0,1.145,0.709,1.608,2.346,2.317l0.954,0.409C40.17,32.079,42,33.496,42,36.683C42,40.118,39.301,42,35.677,42z"/></svg>
+                        </li>
+                    </ul>
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__card card--reverse">
+                <img src="./assets/images/projects/memoryLoveGame.jpg" alt="Mockup Memory Love Game" class="card__cover">
+                <div class="card__body">
+                    <h3 class="card__title">Memory Love Game</h3>
+                    <p class="card__description">Jogo de memória temático com fotos pessoais em homenagem ao primeiro ano de namoro.</p>
+                    <ul class="card__list">
+                        <li class="card__item">Tela inicial</li>
+                        <li class="card__item">Jogo de memória 4x4 temático.</li>
+                        <li class="card__item">Contador de movimentos e tempo (Em Breve)</li>
+                    </ul>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <svg class="skills__logo" alt="HTML5 Logo" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M9,7l3,34l14,4l14-4c1-11.33,2-22.67,3-34H9z M33.76,35l-7.77,2l-7.76-2l-0.39-5h3.86l0.18,2L26,32.62L30.17,32l0.41-5	H17.59l0.96-12H34l0.7,6H31l-0.23-2h-8.36l-0.32,4h12.66L33.76,35z"/></svg>
+                        </li>
+                        <li class="skills__item">
+                            <svg class="skills__logo" alt="CSS3 Logo" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path fill-rule="evenodd" d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z"/></svg>
+                        </li>
+                        <li class="skills__item">
+                            <svg class="skills__logo" alt="JavaScript Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px"><path d="M43.334,4H6.667C5.196,4,4,5.196,4,6.667v36.666C4,44.804,5.196,46,6.667,46h36.666C44.804,46,46,44.804,46,43.334V6.667C46,5.196,44.804,4,43.334,4z M27,36.182C27,40.18,24.656,42,21.234,42c-3.092,0-5.324-2.073-6.234-4l3.143-1.903C18.75,37.173,19.673,38,21,38c1.269,0,2-0.496,2-2.426V23h4V36.182z M35.677,42c-3.544,0-5.557-1.787-6.677-4l3-2c0.818,1.335,1.707,2.614,3.589,2.614c1.581,0,2.411-0.79,2.411-1.882c0-1.308-0.858-1.772-2.598-2.533l-0.954-0.409c-2.753-1.173-4.583-2.643-4.583-5.749c0-2.862,2.18-5.04,5.588-5.04c2.426,0,4.17,0.844,5.427,3.055l-2.971,1.908c-0.654-1.173-1.36-1.635-2.456-1.635c-1.118,0-1.826,0.709-1.826,1.635c0,1.145,0.709,1.608,2.346,2.317l0.954,0.409C40.17,32.079,42,33.496,42,36.683C42,40.118,39.301,42,35.677,42z"/></svg>
+                        </li>
+                    </ul>
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__card">
+                <img src="./assets/images/projects/pokedex.jpg" alt="Mockup Pokedex" class="card__cover">
+                <div class="card__body">
+                    <h3 class="card__title">Pokedéx</h3>
+                    <p class="card__description">Aplicação que exibe informações sobre Pokémon, utilizando a PokeAPI.</p>
+                    <ul class="card__list">
+                        <li class="card__item">Listagem de Pokémon</li>
+                        <li class="card__item">Paginação (carregar mais Pokémon)</li>
+                        <li class="card__item">Exibição de detalhes de cada Pokémon (número, nome, tipos, imagem)</li>
+                    </ul>
+                    <ul class="skills__list">
+                        <li class="skills__item">
+                            <svg class="skills__logo" alt="HTML5 Logo" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M9,7l3,34l14,4l14-4c1-11.33,2-22.67,3-34H9z M33.76,35l-7.77,2l-7.76-2l-0.39-5h3.86l0.18,2L26,32.62L30.17,32l0.41-5	H17.59l0.96-12H34l0.7,6H31l-0.23-2h-8.36l-0.32,4h12.66L33.76,35z"/></svg>
+                        </li>
+                        <li class="skills__item">
+                            <svg class="skills__logo" alt="CSS3 Logo" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path fill-rule="evenodd" d="M 42 6 L 39 40 L 25 44 L 11 40 L 8 6 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z"/></svg>
+                        </li>
+                        <li class="skills__item">
+                            <svg class="skills__logo" alt="JavaScript Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" width="50px" height="50px"><path d="M43.334,4H6.667C5.196,4,4,5.196,4,6.667v36.666C4,44.804,5.196,46,6.667,46h36.666C44.804,46,46,44.804,46,43.334V6.667C46,5.196,44.804,4,43.334,4z M27,36.182C27,40.18,24.656,42,21.234,42c-3.092,0-5.324-2.073-6.234-4l3.143-1.903C18.75,37.173,19.673,38,21,38c1.269,0,2-0.496,2-2.426V23h4V36.182z M35.677,42c-3.544,0-5.557-1.787-6.677-4l3-2c0.818,1.335,1.707,2.614,3.589,2.614c1.581,0,2.411-0.79,2.411-1.882c0-1.308-0.858-1.772-2.598-2.533l-0.954-0.409c-2.753-1.173-4.583-2.643-4.583-5.749c0-2.862,2.18-5.04,5.588-5.04c2.426,0,4.17,0.844,5.427,3.055l-2.971,1.908c-0.654-1.173-1.36-1.635-2.456-1.635c-1.118,0-1.826,0.709-1.826,1.635c0,1.145,0.709,1.608,2.346,2.317l0.954,0.409C40.17,32.079,42,33.496,42,36.683C42,40.118,39.301,42,35.677,42z"/></svg>
+                        </li>
+                    </ul>
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>
             © 2024. Todos os Direitos Reservados. Pablo Fernando Rodriguez. Desenvolvido por <a href="">CarrotUserBr</a> 
