@@ -500,6 +500,39 @@ footer p{
         width: 2rem;
         height: 2rem;
     }
+
+    .about__container{
+        flex-direction: row;
+        gap: 6.25rem;
+        width: 100%;
+    }
+
+    .about__photo {
+        width: 27rem;
+        height: 27rem;
+    }
+
+    .about__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about__buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about__language {
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+    }
+    
+    .about__buttons .btn {
+        min-width: fit-content;
+    }
+
 }
 
 @media (min-width: 1400px){
