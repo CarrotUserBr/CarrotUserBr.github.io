@@ -363,6 +363,24 @@ main {
     display: none;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 1rem;
+}
+
+.contact__text {
+    text-transform: none;
+    text-align: center;
+}
+
+.contact .menu--social{
+    display: flex;
+}
+
 footer {
     margin-bottom: 5rem;
 }
@@ -402,7 +420,7 @@ footer p{
         letter-spacing: 0.4rem;
     }
 
-    main, .projects, .about{
+    main, .projects, .about, .contact{
         padding: 8rem 6rem 4rem;
     }
 
@@ -533,6 +551,11 @@ footer p{
         min-width: fit-content;
     }
 
+    .contact__text {
+        width: 45rem;
+        
+    }
+
 }
 
 @media (min-width: 1400px){
@@ -549,7 +572,7 @@ footer p{
         padding: 0.5rem 15rem;
     }
     
-    main, .projects, .about {
+    main, .projects, .about, .contact {
         padding: 12rem 15rem 2rem;
     }
 
