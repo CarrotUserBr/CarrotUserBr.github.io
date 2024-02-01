@@ -518,6 +518,11 @@ footer p{
     }
 
 
+    .accordion__body p {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
     footer {
         margin: 0;
     }
@@ -632,7 +637,7 @@ footer p{
         gap: .3rem;
     }
     
-    .about__buttons .btn {
+    .about__buttons a{
         min-width: fit-content;
     }
 
@@ -670,6 +675,13 @@ footer p{
     }
 } 
 
+.main__content2, .curriculo{
+    display: none;
+}
+
+.skills {
+    margin: 0;
+}
 
 
 
