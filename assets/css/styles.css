@@ -446,7 +446,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .contact__text {
@@ -456,6 +456,9 @@ main {
 
 .contact .menu--social{
     display: flex;
+}
+.contact .menu--social span {
+    font-size: 1rem;
 }
 
 footer {
@@ -672,6 +675,10 @@ footer p{
 
     .skills {
         padding: 10rem 15rem 4rem;
+    }
+
+    .contact .menu--social span {
+        font-size: 1.4rem;
     }
 } 
 
