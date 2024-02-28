@@ -1,16 +1,36 @@
 const toggleTheme = document.getElementById("toggleTheme")
 const rootHtml = document.documentElement
 
+applySavedTheme()
+
 function changeTheme(){
     const currentTheme = rootHtml.getAttribute("data-theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light"
 
-    currentTheme === "light" ? rootHtml.setAttribute("data-theme", "dark") : rootHtml.setAttribute("data-theme", "light")
-
+    rootHtml.setAttribute("data-theme", newTheme)
     toggleTheme.classList.toggle("bi-moon-stars");
     toggleTheme.classList.toggle("bi-sun");
-}
+    toggleTheme.classList.toggle("bi-moon-stars");
+
+    localStorage.setItem ("theme", newTheme)
+};
+
+function applySavedTheme(){
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        rootHtml.setAttribute("data-theme", savedTheme)
+        if (savedTheme === "dark") {
+            toggleTheme.classList.add("bi-sun")            
+        } else {
+            toggleTheme.classList.add("bi-moon-stars")
+        }
+    }
+};
+
+console.log(localStorage)
 
 toggleTheme.addEventListener("click", changeTheme);
+
 
 const accordionHeaders = document.querySelectorAll(".accordion__header");
 
@@ -31,3 +51,4 @@ menuLinks.forEach(item => {
         item.classList.add("active")
     })
 })
+
